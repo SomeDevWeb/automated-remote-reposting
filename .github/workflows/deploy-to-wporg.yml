@@ -21,4 +21,4 @@ jobs:
         env:
            SVN_USERNAME: ${{ vars.SVN_USERNAME }}
            SVN_PASSWORD: ${{ vars.SVN_PASSWORD }}
-           SLUG: automated-remote-reposting
+           SLUG: automated-remote-reposting-source
