@@ -13,9 +13,12 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
 
+      - name: Set up SVN
+        run: sudo apt-get install -y subversion
+
       - name: Deploy to WordPress.org
-        uses: 10up/action-wordpress-plugin-deploy@5e6c818d2a7b3cf40eb204abbfd902b473eb24d8
-        with:
-          slug: ${{ secrets.PLUGIN_SLUG }}
-          wordpress-org-username: ${{ secrets.SVN_USERNAME }}
-          wordpress-org-password: ${{ secrets.SVN_PASSWORD }}
+        uses: 10up/action-wordpress-plugin-deploy@stable
+        env:
+          SVN_USERNAME: ${{ secrets.SVN_USERNAME }}
+          SVN_PASSWORD: ${{ secrets.SVN_PASSWORD }}
+          SLUG: automated-remote-reposting
