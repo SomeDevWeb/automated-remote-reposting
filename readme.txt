@@ -1,10 +1,10 @@
 === Automated Remote Reposting ===
 Contributors: SomeDev
-Donate link: http://www.regionad.co.uk/automated-remote-reposting/
+Donate link: https://www.webcreative.me/automated-remote-reposting/
 Tags: reposting, remote posting, automated reposting, posting automation, article double posting
 Requires at least: 4.6
 Tested up to: 6.8.1
-Stable tag: 5.3
+Stable tag: 1.1.0
 Requires PHP: 5.2.4
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
@@ -56,16 +56,17 @@ The "token" offers a security mechanism to insure the post is sent to the right 
 
 == Changelog ==
 
+= 1.1.0 =
+* Added "List/Show Post Categories" button on source settings page
+* Improved compatibility with WordPress 6.8.1
+
+= 1.0.1 =
+* Fixed a bug related to the remote posting action
+
 = 1.0 =
 * First version of the plugin
 
-= 1.0.1 =
-Fixed a bug related to the remote posting action
-
 == Upgrade Notice ==
 
-= 1.0 =
-No upgrade yet.
-
-= 1.0.1 =
-Fixed a bug related to the remote posting action
+= 1.1.0 =
+Adds an admin button to list all local post categories and improves WP compatibility.
