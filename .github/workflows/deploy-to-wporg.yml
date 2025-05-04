@@ -19,6 +19,6 @@ jobs:
       - name: Deploy to WordPress.org
         uses: 10up/action-wordpress-plugin-deploy@stable
         env:
-          SVN_USERNAME: ${{ secrets.SVN_USERNAME }}
-          SVN_PASSWORD: ${{ secrets.SVN_PASSWORD }}
-          SLUG: automated-remote-reposting
+           SVN_USERNAME: ${{ vars.SVN_USERNAME }}
+           SVN_PASSWORD: ${{ vars.SVN_PASSWORD }}
+           SLUG: automated-remote-reposting
